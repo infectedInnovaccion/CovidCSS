@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos compuestos</title>
+    <style>
+        .accordion > input[name="collapse"] {
+            display: none;
+        }
+
+        .accordion .content {
+            background: #fff;
+            overflow: hidden;
+            height: 0;
+            transition: 0.5s;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .accordion .content2 {
+            background: #fff;
+            overflow: hidden;
+            height: 0;
+            transition: 0.5s;
+            box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .accordion label {
+            color: #fff;
+            cursor: pointer;
+            font-weight: normal;
+            padding: 10px;
+            background: #b0100c;
+            
+        }
+ 
+.accordion label:hover,
+.accordion label:focus {
+  background: #252525;
+}
+ 
+.accordion .handle label:before {
+  font-family: FontAwesome;
+  content: "\f107";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  transition: 0.4s;
+  
+}
+ 
+.accordion > input[name="collapse"]:checked ~ .handle label:before {
+    transform: rotate(180deg);
+    transform-origin: center;
+    transition: 0.4s;
+}
+
+.accordion > input[name="collapse"]:checked ~ .content {
+  height: 380px;
+  transition: height 0.5s;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Combate el virus con vacunas</h1>
+    <P>Terminemos con la pademia matando los virus con una vacuna,
+        no dejes que tu familia y tu sean infectados.
+    </P>
+    <p>La mejor proteccion</p>
+    <p>Vacunas disponibles</p>
+    <h4>Agenda tu vacunacion</h4>
+    <p>Ubicacion <br> Jakarta Utara</p>
+    <p>Fecha <br> 8 de Julio de 2022</p>
+    <p>Tipo de vacuna <br>Moderna</p>
+    <input type="submit" value="agregar">
+    <hr>
+<!-- Agregar foto-->
+    <h3>Porque deberia vacunarme?</h3>
+    <p>En order de evitar cualquier duda acerca de obtener la vacuna contra el covid-19,
+        <br>identifica los siguientes cuatro beneficios de la vacuna
+        contra el covid-19.
+    </p>
+    <hr>
+    <h5>Minimiza la propagacion de virus</h5>
+    <p>La vacunacion ah provado su efectividad en evitar
+        <br>que alguien se infecte con el coronavirus.
+    </p>
+
+    <h5>Desarrolla anticuerpos</h5>
+    <p>
+        La vacuna del covid-19 ha demostrado que 
+        <br>ayuda a desarrollar anticuerpos en el 
+        <br>inmune.
+    </p>
+    <h5>Protege a la gente cercana </h5>
+    <p>Los beneficios de la vacunacion del 
+        <br>covid-19 es que nos ayuda a proteger
+        <br>la gente cercana a nosotros.
+    </p>
+
+    <h5>Crear inmunidad de grupo</h5>
+    <p>La vacuna del covid-19 tambien nos
+        <br>beneficia a crear inmunidad de grupo
+        <br>o de rebaño.
+    </p>
+    <hr>
+    <!-- txto colapsado-->
+    <h3>Cuidados antes de la vacunacion</h3>
+    <p>El exito de las vacunas esta fuertemente influenciado
+        por la fortaleza de nuestro sistema inmune. Es por 
+        esta razon, que hay varias cosas que podemos hacer
+        para que la vacuna del covid-19 mejore. 
+    </p>
+
+    <p>Evitar bebidas alcoholicas</p>
+    <p>Evitar el estres</p>
+    <p>Ingerir comida saludable</p>
+    <p>Dormir suficiente</p>
+    <p>Tener actividad fisica</p>
+    <!-- fin de seccion-->
+
+
+
+
+
+
+
+    <section class="accordion">
+        <input type="radio" name="collapse" id="handle1" checked="checked">
+        <h2 class="handle">
+          <label for="handle1">
+          The Visible Short Heading 
+          </label>
+        </h2>
+        
+        <div class="content">
+          <p>Your detailed contents...</p>  
+        </div>
+
+        <input type="radio" name="collapse" id="handle2">
+        <h2 class="handle">
+        <label for="handle2">
+                Another Heading 
+        </label>
+        </h2>
+
+        <div class="content2">
+            <p>Your detailed contents2...</p>  
+          </div>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+    <hr>
+
+    <h3>Contacto de emergencia</h3>
+    <p>Comunicate a los siguientes contactos si tu
+        o tu familia tienen malestar o sintomas 
+        similares a los del covid-19, asegurate de 
+        cuidarte antes de reportarte con nosotros
+    </p>
+
+    <p>Telefono <br>021-123-145-14</p>
+    <input type="button" value="Llamar ahora">
+    <p>Chat <br>021-123-145-14</p>
+    <input type="button" value="Chatear ahora">
+    <p>Video Llamada <br>021-123-145-14</p>
+    <input type="button" value="Video llamada">
+    <p>Mensage <br>021-123-145-14</p>
+    <input type="button" value="Enviar Mensaje">
+    <hr>
+
+    <h3>vacunacion</h3>
+    <p>Nuestra meta es ayudar al mundo
+        a acabar con la pandemia actual.
+    </p>
+    <h3>Acerca de nosotros</h3>
+    <p>
+        <a href="">Acerca de nosotros</a><br>
+        <a href="">Funciones</a><br>
+        <a href="">Noticias & Blog</a>
+    </p>
+    <h3>Compania</h3>
+    <p><a href="">Como trabajamos?</a><br>
+        <a href="">Capital</a><br>
+        <a href="">Seguridad</a>
+    </p>
+
+    <h3>Soporte</h3>
+    <p>
+        <a href="">FAQs</a><br>
+        <a href="">Centro de soporte</a><br>
+        <a href="">Contactanos</a>
+    </p>
+    <hr>
+    <footer>
+        <p>@2022 Vacunacion. Todos los derechos reservados</p>
+        <p>
+            <a href="">Terminos y condiciones</a>
+            <a href="">Politica de privacidad</a>
+        </p>
+      </footer>
+</body>
+</html>
